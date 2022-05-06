@@ -11,7 +11,7 @@ app.use(cors());
 app.use(express.json());
 
 //JWT Verification
-/* function JWTVerification(req,res,next){
+function JWTVerification(req,res,next){
     const authHeaders=req.headers.authorize;
     if(!authHeaders){
         return res.status(401).send({message: "Access not valid"})
@@ -26,7 +26,7 @@ app.use(express.json());
     })
     
     next();
-} */
+}
 
 
 
